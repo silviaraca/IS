@@ -1,0 +1,37 @@
+El formato debe ser el siguiente:
+{
+  "jugadas": 
+  [
+   {
+     "turno1" : {
+      	 "movimiento1" : ["peon4","peonMover",1],
+      	 "movimiento2" : ["alfil1","arribaIzquierda",3],
+	 "movimiento3" : ["reina","vertical",6],
+	 "movimiento4" : ["alfil1","diagonalArriba", 2],
+	 "movimiento5" : ["caballo2","abajoIzquierda",50]
+   	}
+   },
+   ...
+  ]
+}
+Donde en cada turno no puede haber mas de 5 movimientos (se ignoraran en caso de sobrar).
+Los nombres de las piezas van en minisculas y sin tildes y numeradas de izquierda a derecha
+segun se muestran en el tablero (empezando en 1 siempre, no hay 0 y acaban en 8),
+el rey y la reina no llevan numero.
+los movimientos indicaran la direccion, pudiendo ser:
+	vertical, horizontal, diagonalArriba, diagonalAbajo,
+	peonMover (solo para el peon) y peonComer (solo para el peon)
+El numero de casillas que tiene que moverse la pieza (positivo hacia abajo o la derecha,
+negativo hacia arriba o la izquierda).
+Si alguno de estos parametros es incorrecto o no se puede realizar, se pasara al siguiente
+movimiento y en caso de no haber movimientos validos se ejecutara uno de forma aleatoria.
+
+Los movimientos del caballo seran:
+
+			arribaIzquierda		arribaDerecha
+	
+	izquierdaArriba					derechaArriba
+	
+	izquierdaAbajo					derechaAbajo
+	
+			abajoIzquierda		abajoDerecha

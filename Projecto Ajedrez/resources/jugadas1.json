@@ -1,0 +1,32 @@
+{
+  "jugadas": 
+  [
+   {
+     "turno1" : {
+      	 "movimiento1" : ["peon4","peonMover",1],
+      	 "movimiento2" : ["peon","peonMover",50],
+		 "movimiento3" : ["peon","peonMover",50],
+		 "movimiento4" : ["peon","peonMover",50],
+		 "movimiento5" : ["peon","peonMover",50]
+   	 }
+   },	
+   {
+     "turno2" : {
+      	 "movimiento1" : ["alfil1","diagonalArriba",2],
+      	 "movimiento2" : ["alfil1","diagonalArriba",2],
+		 "movimiento3" : ["alfil1","diagonalArriba",2],
+		 "movimiento4" : ["alfil1","diagonalArriba",2],
+		 "movimiento5" : ["alfil1","diagonalArriba",2]
+   	 }
+   },
+   {
+     "turno3" : {
+      	 "movimiento1" : ["peon","peonMover",50],
+      	 "movimiento2" : ["peon","peonMover",50],
+		 "movimiento3" : ["peon","peonMover",50],
+		 "movimiento4" : ["peon","peonMover",50],
+		 "movimiento5" : ["peon","peonMover",50]
+   	 }
+   }
+   ]
+}
