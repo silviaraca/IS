@@ -1,0 +1,20 @@
+proyecto-is2-grupo-07
+=====================
+
+proyecto-is2-grupo-07 created by GitHub Classroom
+
+Para configurar el proyecto han de descargarse las carpetas src, lib y
+resources. Hay que añadir la libreria JSON al proyecto, para ello en
+Eclipse hay que hacer: Click derecho en el proyecto, properties, Java
+Build Path, Libraries, Add External Jars y seleccionar el JSON
+
+Para que el online funcione hay que cambiar en el codigo: en la clase
+Controlador en el paquete controlador, en el metodo moverPieza, cambiar
+en la linea Socket envia = new Socket("LocalHost", 9999); En vez de
+"LocalHost" la IP privada donde está alojado el servidor
+
+Para cargar un fichero distinto del jugador automático, en la clase
+JugadorAutomaticoFichero en el paquete modelo.jugador en el metodo
+loadFile cambiar en la linea: in = new FileInputStream(new
+File("resources" + File.separatorChar + "jugadablancas2.json")); En vez
+de jugadablancas2 el nombre del archivo a usar
